@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="15.394" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Hooks Testi" name="Hooks Testi Pozitif" time="9.449">
+<system-out><![CDATA[
+Given "trendyol" sitesine gidilir...........................................passed
+And arama kutusuna "iran yapıştırıcısı" yazılır.............................passed
+Then arama sonuclarinin goruntulendigi dogrulanir...........................passed
+Then sonuc sayfasinda "iran yapıştırıcısı" oldugu dogrulanir................passed
+When sonuc sayfasindaki arama sonuc sayisi alinir...........................passed
+Then 20 den fazla urunun ekranda goruntulendigi dogrulanir..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Hooks Testi" name="Hooks Testi Negatif" time="5.663">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[iran yapıştırıcısı]&gt; but was:&lt;[ekose gömlek]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[iran yapıştırıcısı]> but was:<[ekose gömlek]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepdefinitions.day05_Hooks_StepDef.sonuc_sayfasinda_oldugu_dogrulanir(day05_Hooks_StepDef.java:40)
+	at ✽.sonuc sayfasinda "ekose gömlek" oldugu dogrulanir(file:///C:/Users/HakanBatirhan/IdeaProjects/Cucumber_Ders/src/test/resources/features/day05_Hooks.feature:14)
+]]>
+</failure>
+<system-out><![CDATA[
+Given "trendyol" sitesine gidilir...........................................passed
+And arama kutusuna "iran yapıştırıcısı" yazılır.............................passed
+Then arama sonuclarinin goruntulendigi dogrulanir...........................passed
+Then sonuc sayfasinda "ekose gömlek" oldugu dogrulanir......................failed
+When sonuc sayfasindaki arama sonuc sayisi alinir...........................skipped
+Then sonuc sayisindaki kadar urunun ekranda goruntulendigi dogrulanir.......skipped
+]]></system-out>
+</testcase>
+</testsuite>

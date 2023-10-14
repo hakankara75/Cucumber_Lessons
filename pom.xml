@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Cucumber_Ders</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.13.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>7.14.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.14.0</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <!-- Office belgelerinden mesala Excell'den veri okumak için-->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.2.3</version>
+        </dependency>
+        <!-- Office belgelerinden mesala Excell'den veri okumak için-->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.3</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting -->
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>maven-cucumber-reporting</artifactId>
+            <version>5.7.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>1.8.4</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- paralel test icin  -->
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>3.1.2</version>
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>   <!-- senaryo fail olursa calismaya devam et  -->
+                    <skipTests>false</skipTests>
+                    <includes>
+                        <include>**/runners/*Runner*.java</include>       <!-- bu yolun dogru oldugunu kontrol et  -->
+                    </includes>
+                </configuration>
+            </plugin>
+            <!-- paralel test icin  -->
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+                <configuration>
+                    <parallel>methods</parallel>
+                    <threadCount>2</threadCount> <!--aynı anda 2 browser çalıştırılacağı anlamına gelir. -->
+                    <perCoreThreadCount>false</perCoreThreadCount>
+                    <forkCount>2</forkCount> <!-- iki ayrı işlemi başlatır ve her biri farklı bir test paketi çalıştırır. Bu, testlerin daha hızlı tamamlanmasını sağlar. Ancak, bu ayarın artırılması, sistemin kaynaklarını tüketebilir ve performans sorunlarına neden olabilir. -->
+                    <reuseForks>true</reuseForks> <!--Maven önceki testlerde oluşturulmuş işlemleri yeniden kullanır -->
+                    <includes>
+                        <include>**/runners/*Runner*.java</include>  <!-- bu yolun dogru oldugunu kontrol et  -->
+                    </includes>
+                    <testFailureIgnore>true</testFailureIgnore> <!--testin başarısız olmasına rağmen diğer testlere devam eder ve sonunda tüm testleri çalıştırır. -->
+                </configuration>
+            </plugin>
+
+            <!-- cucumber report icin  -->
+            <plugin>
+                <groupId>net.masterthought</groupId>
+                <artifactId>maven-cucumber-reporting</artifactId>
+                <version>5.7.5</version>
+                <executions>
+                    <execution>
+                        <id>execution</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <projectName>cucumber-jvm-example</projectName>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
+                            <inputDirectory>${project.build.directory}</inputDirectory>
+                            <jsonFiles>
+                                <param>**/json-reports/*.json</param>
+                            </jsonFiles><classificationFiles>->
+                            <param>sample.properties</param>
+                            <param>other.properties</param>
+                        </classificationFiles>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+</project>
