@@ -14,3 +14,5 @@
   #xml file icine kodlari yapistir
 #properties icine kodlari yapistir
 #Runner'a plugin icine "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},//eklenir
+
+  #cucumber reportu githubdan mail ile paylasmak icin resources altinda ucumber.properties olustur
