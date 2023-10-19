@@ -6,6 +6,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
+
 import javax.swing.*;
 
 public class Hooks {
@@ -26,7 +27,7 @@ public class Hooks {
 //                       ekran goruntusu    file tipi                  ekran goruntusunun adi
             scenario.attach(failedScreenshot, "image/png", "failed_scenario_" + scenario.getName());
 
-            //  Driver.closeDriver(); ==? Burasi tarayici kapatir
+            Driver.closeDriver(); // Burasi tarayici kapatir
         }
     }
 }

@@ -10,6 +10,6 @@ public class day09_cucumberReport_Page {
     public day09_cucumberReport_Page(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(id = "button[aria-label='Çerezleri Yönet")
+    @FindBy(xpath = "//button[@aria-label='Tümünü Kabul Et']")
     public WebElement cerezler;
 }

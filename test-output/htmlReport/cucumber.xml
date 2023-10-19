@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="10.781" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Cucumber Report" name="Cucumber Report" time="10.606">
+<system-out><![CDATA[
+Given "getir" sitesine gidilir..............................................passed
+When cerezleri kapatir......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

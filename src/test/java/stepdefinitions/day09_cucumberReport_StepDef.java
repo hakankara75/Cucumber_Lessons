@@ -10,7 +10,12 @@ public class day09_cucumberReport_StepDef {
 
     @When("cerezleri kapatir")
     public void cerezleri_kapatir() {
-        ReusableMethods.clickJSElementWithJavaScript("document.querySelector(\"#__next > div.sc-927cf94c-0.kpliOC > div > div.sc-927cf94c-3.hAPxep > div:nth-child(1) > button\")");
+       try{
+            locate.cerezler.click();
+        }catch (Exception e){
+           ReusableMethods.clickJSElementWithJavaScript("document.querySelector(\"#__next > div.sc-927cf94c-0.kpliOC > div > div.sc-927cf94c-3.hAPxep > div:nth-child(1) > button\")");
+
+       }
     }
 
 }

@@ -11,8 +11,8 @@ bu derste extend yaparak ortak metot kullanimi yap tum sayfalari
  */
 @FindBy(id = "myGlobalSearchBtn")
 public WebElement arama;
-    @FindBy(css = "h2[class='h-title mb-0")
-    public WebElement aramaSonucu;
+    @FindBy(id = "userToAcceptButton")
+    public WebElement coocies;
 
     @FindBy(css = "div[class='detail-content-inner")
     public List<WebElement> haberIcerigi;

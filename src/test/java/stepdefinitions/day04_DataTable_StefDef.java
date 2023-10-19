@@ -27,6 +27,9 @@ public class day04_DataTable_StefDef {
             case "herokuapp":
                 Driver.getDriver().get(ConfigReader.getProperty("herokuapp"));
                 break;
+                case "getir":
+                Driver.getDriver().get(ConfigReader.getProperty("getir"));
+                break;
             case "cicek sepeti":
                 Driver.getDriver().get(ConfigReader.getProperty("cicekSepeti"));
                 break;
@@ -36,6 +39,10 @@ public class day04_DataTable_StefDef {
             case "trendyol":
                 Driver.getDriver().get(ConfigReader.getProperty("trendyol"));
                 break;
+                case "mynet":
+                Driver.getDriver().get(ConfigReader.getProperty("mynet"));
+                break;
+
         }
 
     }

@@ -1,10 +1,10 @@
-@Hooks
+
   Feature: Hooks Testi
     Background: Hooks Testi
       Given "trendyol" sitesine gidilir
-      And arama kutusuna "iran yapıştırıcısı" yazılır
+      And arama kutusuna "ekose gömlek" yazılır
       Then arama sonuclarinin goruntulendigi dogrulanir
-
+    @Hooks
     Scenario: Hooks Testi Pozitif
       Then sonuc sayfasinda "iran yapıştırıcısı" oldugu dogrulanir
       When sonuc sayfasindaki arama sonuc sayisi alinir

@@ -19,6 +19,8 @@ public class day08_Rerun_StepDef {
     @Given("Kullanici {string} e gider")
     public void kullaniciEGider(String arg0) {
         Driver.getDriver().get(ConfigReader.getProperty("getir"));
+        ReusableMethods.visibleWait(locate.coocies, 15);
+        locate.coocies.click();
     }
 
     @And("arama butonuna basar")
@@ -31,7 +33,9 @@ public class day08_Rerun_StepDef {
     public void aramaKutusunaYazar(String arg0) {
 
         ReusableMethods.webelementJavaScript("document.querySelector(\"#myGlobalSearchInput\")").sendKeys(arg0);
-        ReusableMethods.clickJSElementWithJavaScript("document.querySelector(\"#taboola-video-reel-close-slider\")");
+        ReusableMethods.bekle(3);
+       ReusableMethods.clickJSElementWithJavaScript("document.querySelector(\"#taboola-video-reel-close-slider\")"); //video için
+        ReusableMethods.bekle(3);
         ReusableMethods.clickJSElementWithJavaScript("document.querySelector(\"#myGlobalSearchBtn\")");
         ReusableMethods.bekle(30);
     }

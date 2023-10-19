@@ -11,3 +11,7 @@ Feature: Paralel Test
         | hakandenememaili@gmail.com |1234567  |
       Then devam butonunun oldugu dogrulanir
 
+#surefire-plugin
+  #failsafe-plugin kurulur
+  #birden fazla runner kur
+  #mvn clean verify ile calistir

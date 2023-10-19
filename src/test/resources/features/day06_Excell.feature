@@ -8,3 +8,6 @@ Feature: Herokuapp Excell Login
   Scenario: TC02_Negative_Login_Testi
     Given "herokuapp" sitesine gidilir
     Then kullanici exceldeki "negative" sayfasindaki kullanici bilgileri ile login olamadigini dogrular
+
+
+

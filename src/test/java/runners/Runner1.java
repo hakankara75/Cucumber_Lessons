@@ -3,6 +3,7 @@ package runners;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
+
 /*
 Runner class; testNG deki .xml file larda belirttiğimiz class'ları,packageları veya methodları nasıl
 çalıştırıyorsak, Cucumber frameworkundede Runner class'ındaki tags parametresi ile belirttiğimiz
@@ -14,9 +15,9 @@ senaryoyu çalıştırabiliriz
 @CucumberOptions(  //plugin kismi raporlar icin
                 plugin = {
                         "pretty", //console renkli yazdirmak icin
-                        "html:src/test/resources/features/htmlReport/cucumberHooks.html", //html report için
-                        "json:target/json-reports/cucumber.json",  //plugin ekledikten sonra bunu cucumber report için ekle
-                        "junit:test-output/htmlReport/cucumber.xml", //xml report için
+                        "html:TestOutput/htmlReport/cucumberHooks1.html", //html report için
+                        "json:target/json-reports/cucumber1.json",  //cucumber report için
+                        "junit:test-output/htmlReport/cucumber1.xml", //xml report için
                         "rerun:TestOutput/failed_scenario.txt",//bu satirdaki kod, hata veren testleri kaydedip yeniden otomatik kosmak icin
                         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},//spark report icin
               //  monochrome = true, //console okunakli hale getirir, renksiz yapar
@@ -36,5 +37,5 @@ tags ====> çalıştırmak istediğin grubu yaz
 dryRun = true ====> eksik step definition bulup gösterir. calismaz. konsolda eksik stepleri gosterir.
  */
 
-public class Runner {
+public class Runner1 {
 }

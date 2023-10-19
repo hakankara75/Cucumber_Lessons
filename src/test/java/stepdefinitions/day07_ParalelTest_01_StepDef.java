@@ -22,7 +22,7 @@ public class day07_ParalelTest_01_StepDef {
     @When("search box ina {string} yazılır")
     public void search_box_ina_yazılır(String string) {
 
-        page.cerez.click();
+      //  page.cerez.click();
         ReusableMethods.visibleWait(page.evet, 15);
         page.evet.click();
         ReusableMethods.flash(page.searchBox, Driver.getDriver());
@@ -76,7 +76,7 @@ public class day07_ParalelTest_01_StepDef {
     }
     @Then("devam butonunun oldugu dogrulanir")
     public void devam_butonunun_oldugu_dogrulanir() {
-        assertTrue(page.devamButonu.isDisplayed());
+        assertTrue(page.devamButonu.isSelected());
     }
 
 

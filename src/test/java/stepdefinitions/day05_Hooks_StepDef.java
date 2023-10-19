@@ -16,7 +16,7 @@ import static org.junit.Assert.assertTrue;
 public class day05_Hooks_StepDef {
 
     day05_Hooks_Page hooks = new day05_Hooks_Page();
-    String sonuc;
+    String actualSize;
     @Given("trendyol sitesine gidilir")
     public void trendyol_sitesine_gidilir() {
         Driver.getDriver().get(ConfigReader.getProperty("trendyol"));
@@ -49,8 +49,8 @@ public class day05_Hooks_StepDef {
 
     @When("sonuc sayfasindaki arama sonuc sayisi alinir")
     public void sonucSayfasindakiAramaSonucSayisiAlinir() {
-        sonuc= hooks.aramaSonucuTamami.getText().replaceAll("\\D", "");
-        System.out.println("sonuc = " + sonuc);
+        actualSize = hooks.aramaSonucuTamami.getText().replaceAll("\\D", "");
+
     }
 
 
@@ -58,13 +58,16 @@ public class day05_Hooks_StepDef {
     public void denFazlaUrununEkrandaGoruntulendigiDogrulanir(int arg0) {
         int actualProduct= Driver.getDriver().findElements(By.cssSelector("div[class='image-overlay-body")).size();
         int expectedSize= arg0;
+        System.out.println("expectedSize = " + expectedSize);
+        System.out.println("actualSize = " + actualSize);
         assertTrue(actualProduct>=expectedSize);
     }
 
     @Then("sonuc sayisindaki kadar urunun ekranda goruntulendigi dogrulanir")
     public void sonucSayisindakiKadarUrununEkrandaGoruntulendigiDogrulanir() {
         int actualProduct= Driver.getDriver().findElements(By.cssSelector("div[class='image-overlay-body")).size();
-        int expectedSize= Integer.parseInt(sonuc);
+        System.out.println("actualProduct = " + actualProduct);
+        int expectedSize= Integer.parseInt(actualSize);
         assertTrue(actualProduct==expectedSize);
     }
 
