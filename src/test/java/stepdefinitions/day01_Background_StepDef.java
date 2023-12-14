@@ -4,6 +4,9 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.By;
+import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.WebElement;
 import pages.day01_Background_Page;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -19,6 +22,16 @@ public class day01_Background_StepDef {
     @Given("ets tur sitesine gidilir")
     public void ets_tur_sitesine_gidilir() {
         Driver.getDriver().get(ConfigReader.getProperty("etsUrl"));
+        ReusableMethods.visibleWait(loginNegatif.shadowRoot,5);
+
+        //youtube shadow root videosunda bu konu islendi
+//        SearchContext searchContext = Driver.getDriver().findElement(By.xpath("efilli-layout-etstur")).getShadowRoot();
+//        WebElement shadowElement = searchContext.findElement(By.cssSelector("//div[text()='Kabul Et']"));
+//        shadowElement.click();
+
+        loginNegatif.shadowRoot.click();
+        loginNegatif.kabulEt.click();
+
     }
 
     @Given("login butonu ustune gidilir")
@@ -33,7 +46,7 @@ public class day01_Background_StepDef {
 
     @Then("eposta girilir")
     public void eposta_girilir() {
-
+        ReusableMethods.visibleWait(loginNegatif.email, 30);
         expectedTitle = Driver.getDriver().getTitle();
 
         loginNegatif.email.sendKeys(ConfigReader.getProperty("email"));
@@ -111,12 +124,6 @@ public class day01_Background_StepDef {
 
     }
 
-    @Then("sayfaya gidildigi dogrulanir")
-    public void sayfaya_gidildigi_dogrulanir() {
-        String actualTitle = Driver.getDriver().getCurrentUrl();
-        assertFalse(expectedTitle.equals(actualTitle));
-        Driver.closeDriver();
 
-    }
 
 }

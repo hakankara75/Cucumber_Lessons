@@ -16,6 +16,10 @@ public class day01_Background_Page {
     public WebElement giris;
     @FindBy(css = "button[data-target='#modalSignUp']")
     public WebElement uyeOl;
+    @FindBy(css = "efilli-layout-etstur[class='efilli-layout-etstur")
+    public WebElement shadowRoot;
+    @FindBy(xpath = "//div[text()='Kabul Et']")
+    public WebElement kabulEt;
     @FindBy(id = "tb-contactEmailSignIn")
     public WebElement email;
     @FindBy(id = "showPass_2")

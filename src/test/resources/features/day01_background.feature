@@ -1,4 +1,6 @@
+
 Feature: ets Tur sitesi login testi
+  @login
   Scenario: ets tur login
     Given ets tur sitesine gidilir
     And login butonu ustune gidilir
@@ -8,7 +10,7 @@ Feature: ets Tur sitesi login testi
     When giris yap butonuna basilir
     Then sayfaya gidilemedigi dogrulanir
 
-  @login
+
   Scenario: ets tur login
     Given ets tur sitesine gidilir
     And login butonu ustune gidilir
@@ -22,4 +24,4 @@ Feature: ets Tur sitesi login testi
     And kullanim sartlari checkbox secilir
     And firsat ve kampanyalar checkbox secilir
     When uyelik bolumunde uye ol butonuna basilir
-    Then sayfaya gidildigi dogrulanir
+    Then sayfaya gidilemedigi dogrulanir
