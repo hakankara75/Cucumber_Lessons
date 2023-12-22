@@ -29,6 +29,14 @@ senaryoyu çalıştırabiliriz
                  dryRun = false,
                  monochrome = false //console okunakli hale getirir,false scenario adimlarini renkli gosterir,  true renksiz yapar
                         )
+
+
+
+
+
+
+
+
 /*
 features ===> features'ların olduğu packega'ın yolunu ver(ContentRoot)
 glue ====> stepDefinition'ların olduğu packega'ın yolunu ver(Source Root), Hooks class yolunu ver
