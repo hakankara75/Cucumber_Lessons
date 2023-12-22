@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="14.89" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Amazon" name="Amazon" time="14.385">
+<system-out><![CDATA[
+Given Amazon sitesine gidilir...............................................passed
+When yeni cikanlar secilir..................................................passed
+Then gorunen urunlerde firca oldugu dogrulanir..............................passed
+]]></system-out>
+</testcase>
+</testsuite>

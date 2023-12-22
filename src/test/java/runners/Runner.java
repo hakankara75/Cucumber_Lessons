@@ -25,7 +25,7 @@ senaryoyu çalıştırabiliriz
         /* 1-Bu parametre ile kodlarımızı yazdığımız stepDefinition class'ının packege'ını belirtiriz
 2- Hooks classin yolunu veririz.
                                              */
-                 tags = "@login",
+                 tags = "@yemek",
                  dryRun = false,
                  monochrome = false //console okunakli hale getirir,false scenario adimlarini renkli gosterir,  true renksiz yapar
                         )
