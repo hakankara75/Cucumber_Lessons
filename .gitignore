@@ -36,4 +36,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
-src/test/java/runners/Runner.java
+/src/test/java/runners/Runner.java
