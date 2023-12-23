@@ -192,14 +192,22 @@ public class ReusableMethods {
         js.executeScript("window.scrollTo(0,-document.body.scrollHeight)");
     }
 
-    //JS SendKeys
+    /**
+     * bu metot ile javascript kullanarak bir elemente sendKey yapılır
+     * @param element sendKey yapılacak elementin locate verilmeli
+     * @param text elemente gönderilecek değer verilmeli
+     */
     public static void sendKeysJS(WebElement element, String text) {
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         js.executeScript("arguments[0].value='" + text + "'", element);
 
     }
 
-    //JS SendAttributeValue
+    /**
+     * bu metot ile bir elementin value'suna deger atanir.
+     * @param element deger atanacak elementin locate verilmeli
+     * @param text elemente gönderilecek value verilmeli
+     */
     public static void sendAttributeJS(WebElement element, String text) {
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         js.executeScript("arguments[0].setAttribute('value','" + text + "')", element);
