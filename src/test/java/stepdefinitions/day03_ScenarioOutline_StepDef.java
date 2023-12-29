@@ -14,7 +14,11 @@ import utilities.ReusableMethods;
 import static org.junit.Assert.assertTrue;
 
 public class day03_ScenarioOutline_StepDef {
+/*
+önce 2 senaryo yazılır
+daha sonra background oluşturulup ortak 2 step onun altına çekilir
 
+ */
     day03_ScenarioOutline_Page scenario = new day03_ScenarioOutline_Page();
     Faker faker = new Faker();
 

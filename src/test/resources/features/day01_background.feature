@@ -1,9 +1,11 @@
 
 Feature: ets Tur sitesi login testi
-  @login
-  Scenario: ets tur login
+  Background: ets sitesine giris
     Given ets tur sitesine gidilir
     And login butonu ustune gidilir
+
+  @login
+  Scenario: ets tur login
     When giris butonuna basilir
     And eposta girilir
     And password girilir
@@ -12,8 +14,6 @@ Feature: ets Tur sitesi login testi
 
 
   Scenario: ets tur login
-    Given ets tur sitesine gidilir
-    And login butonu ustune gidilir
     Then uye ol butonuna basilir
     And ad girilir
     And soyad girilir

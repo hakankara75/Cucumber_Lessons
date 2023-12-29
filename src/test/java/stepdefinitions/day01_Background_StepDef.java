@@ -4,18 +4,20 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.SearchContext;
-import org.openqa.selenium.WebElement;
 import pages.day01_Background_Page;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
-
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 
 public class day01_Background_StepDef {
+    /*
+    Bu derste iki ayrı senaryo yazariz.
+    Senaryolar bitince ortak 2 step Background kısmına eklenir.
+    Background bize senaryolarda ortak olarak tekrar edecek kodları 1 kez yazarak clear code yapar
+    Background ayrıca loop özelliğine sahiptir. Her scenario öncesi kodlar otomatik çalışır.
+
+     */
     day01_Background_Page loginNegatif = new day01_Background_Page();
     String expectedTitle;
 

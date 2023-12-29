@@ -16,7 +16,11 @@ import java.util.List;
 import static org.junit.Assert.assertTrue;
 
 public class day02_SearchParameterizing_StepDef {
-
+/*
+bu derste senaryoda önce aranacak kelime tırnaksız şekilde yazılır.
+ardından 2. senaryoda aranacak kelime tırnak içine alınarak parametre yapılır.
+Dataları faker classtan çekeriz.
+ */
     day02_SearchParameterizing_Page search=new day02_SearchParameterizing_Page();
     String string1="";
 

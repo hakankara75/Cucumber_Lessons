@@ -1,9 +1,11 @@
 
   Feature: Scenario Outline Testi
 
-    Scenario: Uyelik Testi
+    Background: siteye giris
       Given boyner sitesine gidilir
       When login ikonu ustune gidilir
+
+    Scenario: Uyelik Testi
       And uye ol linki tiklanir
       Then uyelik sayfasinda oldugu dogrulanir
       And uyelik sayfasinda ad girilir
@@ -16,8 +18,6 @@
 
     @boyner
       Scenario Outline: Negatif Uyelik Testi
-        Given boyner sitesine gidilir
-        When login ikonu ustune gidilir
         And uye ol linki tiklanir
         Then uyelik sayfasinda oldugu dogrulanir
         And uyelik sayfasinda ad bolumune "<ad>" girilir

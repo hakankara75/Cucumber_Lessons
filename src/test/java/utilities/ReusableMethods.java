@@ -299,7 +299,7 @@ public class ReusableMethods {
     }
 
     /**
-     * Bu metot ile elementin className değeri string olarak verilerek o classtaki text alinir.
+     * Bu metot ile elementin xpath değeri string olarak verilerek o classtaki text alinir.
      *
      * @param className text degeri alinmak istenen class ismi string olarak verilir
      * @return
