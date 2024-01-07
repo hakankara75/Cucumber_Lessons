@@ -1,0 +1,16 @@
+file/settings/plugin/ marketplace
+cucumber for groovy
+cucumber for java
+gherkin
+
+pom.xml'e
+dependencies kısmına
+ <artifactId>selenium-java</artifactId>
+        <artifactId>cucumber-junit</artifactId>
+           <artifactId>cucumber-java</artifactId>
+                <artifactId>cucumber-jvm</artifactId>
+                   <artifactId>maven-cucumber-reporting</artifactId>
+                    <artifactId>extentreports-cucumber7-adapter</artifactId>
+
+plugin kısmına
+  <artifactId>maven-cucumber-reporting</artifactId>
