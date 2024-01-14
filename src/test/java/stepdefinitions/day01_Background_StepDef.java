@@ -113,6 +113,7 @@ public class day01_Background_StepDef {
         ReusableMethods.clickJSElementWithJavaScript("document.querySelector(\"body > efilli-layout-etstur\").shadowRoot.querySelector(\"div > div.banner__accept-button\")");
         loginNegatif.kullanimSartlari.click();
 
+
     }
 
     @Then("firsat ve kampanyalar checkbox secilir")

@@ -1,4 +1,5 @@
-
+#Background bize tekrar eden giriş işlemlerinde stepleri birleştirme imkanı verir.
+#Background her Scenario başlarken loop yapar gibi her defasinda yeniden calisir.
 Feature: ets Tur sitesi login testi
   Background: ets sitesine giris
     Given ets tur sitesine gidilir

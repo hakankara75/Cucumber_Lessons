@@ -9,8 +9,10 @@ dependencies kısmına
         <artifactId>cucumber-junit</artifactId>
            <artifactId>cucumber-java</artifactId>
                 <artifactId>cucumber-jvm</artifactId>
+
+Rapor için aşağıdakiler kurulur
                    <artifactId>maven-cucumber-reporting</artifactId>
                     <artifactId>extentreports-cucumber7-adapter</artifactId>
 
-plugin kısmına
+plugin kısmına rapor için aşağıdaki eklenir
   <artifactId>maven-cucumber-reporting</artifactId>

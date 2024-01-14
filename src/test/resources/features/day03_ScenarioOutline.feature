@@ -1,6 +1,6 @@
-
-  Feature: Scenario Outline Testi
-
+#Scenario Outline benzer ancak farklı veri seti ile aynı senaryonun çalıştırılmasını sağlar.
+#Scenario Outline verisetini kullanırken loop yapar
+Feature: Scenario Outline
     Background: siteye giris
       Given boyner sitesine gidilir
       When login ikonu ustune gidilir

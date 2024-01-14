@@ -12,6 +12,8 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- asagidaki kod cucumber dependicies iceren 3 tanenin ortak version numarasidir -->
+        <cucumber.version>7.14.0</cucumber.version>
     </properties>
 
     <dependencies>
@@ -21,24 +23,27 @@
             <artifactId>selenium-java</artifactId>
             <version>4.13.0</version>
         </dependency>
+        <!-- bu dependency nin version numarasi properties icinde cucumber.version olarak tanimli -->
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>7.14.0</version>
+            <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
+        <!-- bu dependency nin version numarasi properties icinde cucumber.version olarak tanimli -->
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>7.14.0</version>
+            <version>${cucumber.version}</version>
         </dependency>
+        <!-- bu dependency nin version numarasi properties icinde cucumber.version olarak tanimli -->
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-jvm</artifactId>
-            <version>6.8.1</version>
+            <version>${cucumber.version}</version>
             <type>pom</type>
         </dependency>
 

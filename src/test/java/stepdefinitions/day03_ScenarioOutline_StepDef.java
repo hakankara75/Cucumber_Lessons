@@ -12,6 +12,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 
 import static org.junit.Assert.assertTrue;
+import static utilities.Driver.getDriver;
 
 public class day03_ScenarioOutline_StepDef {
 /*
@@ -24,7 +25,7 @@ daha sonra background oluşturulup ortak 2 step onun altına çekilir
 
     @Given("boyner sitesine gidilir")
     public void boyner_sitesine_gidilir() {
-        Driver.getDriver().get(ConfigReader.getProperty("boynerUrl"));
+        getDriver().get(ConfigReader.getProperty("boynerUrl"));
 
     }
 
@@ -104,6 +105,7 @@ daha sonra background oluşturulup ortak 2 step onun altına çekilir
     @Then("uye ol butonu tiklanir")
     public void uye_ol_butonu_tiklanir() {
         scenario.uyelikButton.click();
+        getDriver().close();
     }
 
 

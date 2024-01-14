@@ -58,7 +58,7 @@ Dataları faker classtan çekeriz.
     public void arama_kutusuna_yazilir(String string) {
         Faker faker=new Faker();
         String string1= faker.commerce().productName();
-        if(string.equals("<urun>")){
+        if(string.equals("urun")){
             search.searchBox.click();
             search.searchBox.sendKeys(string1);
         }
