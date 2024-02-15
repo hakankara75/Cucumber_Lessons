@@ -501,7 +501,6 @@ public class ReusableMethods {
 
     /**
      * bu metot ile JS yolu string olarak verilen elementi JavascriptExecutor kullanarak tiklayabilirim
-     * @param webElement click yapilacak webelement yolu string olarak verilir
      */
     public static void clickJSElementWithJavaScript(String javascriptYolu) {
         JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();

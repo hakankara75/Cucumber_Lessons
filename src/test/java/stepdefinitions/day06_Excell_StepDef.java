@@ -25,7 +25,7 @@ public class day06_Excell_StepDef {
     @Given("kullanici exceldeki {string} sayfasindaki kullanici bilgileri ile login olur")
     public void kullanici_exceldeki_sayfasindaki_kullanici_bilgileri_ile_login_olur(String string) {
         expectedUrl= "https://thinking-tester-contact-list.herokuapp.com/contactList";
-        ExcelUtils excelUtils=new ExcelUtils("src/test/resources/userData.xlsx", string);//ExcelUtils classtaki metotlara ulmak icin const. olusturdum
+        ExcelUtils excelUtils=new ExcelUtils("src/test/resources/userData.xlsx", string);//ExcelUtils classtaki metotlara ulasmak icin const. olusturdum
         for (int i = 1; i <= excelUtils.rowCount(); i++) { //i=1 olmali cunku excellin ilk satiri basliktir. rowCount() satir sayisini verir. <= olmali ki son satiri da alsin
             String email=excelUtils.getCellData(i, 0); //excellden email sutununundaki bilgileri okuyup stringe atar
             String password=excelUtils.getCellData(i, 1); //excellden password sutununundaki bilgileri okuyup stringe atar
