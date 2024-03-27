@@ -525,5 +525,6 @@ public class ReusableMethods {
     public static WebElement waitForClickablility(WebElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.elementToBeClickable(element));
+
     }
 }

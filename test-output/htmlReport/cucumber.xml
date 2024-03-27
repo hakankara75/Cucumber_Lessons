@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="24.172" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Search Parameterizing" name="Parametreli Arama Kutusu Testi" time="24.019">
+<testsuite name="Cucumber" time="29.724" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Search Parameterizing" name="Parametreli Arama Kutusu Testi" time="29.441">
 <system-out><![CDATA[
 Given madame coco sitesine gidilir..........................................passed
 And ingilizce menu secilir..................................................passed
