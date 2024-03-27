@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe9bb4d5-54d7-4e79-b4af-51fde701f9b1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Day_10_Hidden_Elements_Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/Day_10_Hidden_Elements_StepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/day10_Hidden_Elements.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/PdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Report/PdfReport/ExtentPdf.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestOutput/failed_scenario.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestOutput/htmlReport/cucumber.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestOutput/htmlReport/cucumberHooks.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestOutput/htmlReport/cucumberHooks1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/embedded1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestOutput/failed_scenario.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TestOutput/failed_scenario.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/htmlReport/cucumberHooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/htmlReport/cucumberHooks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/htmlReport/cucumber.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/htmlReport/cucumber1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/htmlReport/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/htmlReport/cucumber.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
