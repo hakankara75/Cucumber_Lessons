@@ -48,6 +48,7 @@ public class Driver {
 //                    prefs.put("download.default_directory", filePath);
 //                    options.setExperimentalOption("prefs", prefs);
                     //  driver = new ChromeDriver(options);  //bu satirdaki yorum slashlarini bir alt satira indirip calistirmaliyiz.
+
                     driver = new ChromeDriver(new ChromeOptions().addArguments("--remote-allow-origins=*"));
                     break;
                 case "edge":
