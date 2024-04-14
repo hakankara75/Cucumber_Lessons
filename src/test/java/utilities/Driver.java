@@ -40,6 +40,7 @@ public class Driver {
                     options.addArguments("--headless"); // Headless test yapmak icin
                     options.addArguments("--disaple-gpu"); //GPU kullanimini devre disi birakir
                     //driver= new ChromeDriver(options); //bu kodu headless testte acarsinizi
+
                     //asagidaki kodlar file download yaparken default deger olan download klasoru yerine bir yol vermemize yarar
 //                    ChromeOptions options = new ChromeOptions();
 //                    String filePath ="C:\\Hakan Arsiv";
