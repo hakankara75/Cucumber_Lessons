@@ -35,7 +35,7 @@ public class Driver {
         if (driver == null) {
             switch (ConfigReader.getProperty("browser")) {
                 case "chrome":
-                    System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver-win64\\chromedriver.exe");
+                   // System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver-win64\\chromedriver.exe");
                     ChromeOptions options= new ChromeOptions();
                     options.addArguments("--headless"); // Headless test yapmak icin
                     options.addArguments("--disaple-gpu"); //GPU kullanimini devre disi birakir

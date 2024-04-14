@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="95.288" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="hidden elements" name="hidden elements - Example #1.1" time="94.872">
-<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']' (tried for 2 second(s) with 500 milliseconds interval)">
-<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']' (tried for 2 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at utilities.ReusableMethods.visibleWait(ReusableMethods.java:107)
-	at stepdefinitions.Day_10_Hidden_Elements_StepDef.ıVerifyWithSuccessMessageBox(Day_10_Hidden_Elements_StepDef.java:119)
-	at ✽.I verify "Successfully Saved" with success message box(file:///C:/Users/Hakan/IdeaProjects/Cucumber_Ders/src/test/resources/features/day10_Hidden_Elements.feature:20)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']"}
-  (Session info: chrome=123.0.6312.59)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<testsuite name="Cucumber" time="51.681" tests="4" skipped="0" failures="3" errors="0">
+<testcase classname="Scenario Outline" name="Negatif Uyelik Testi - Example #1.1" time="20.859">
+<failure type="org.openqa.selenium.ElementNotInteractableException" message="element not interactable
+  (Session info: MicrosoftEdge=123.0.2420.65)
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f065bfc59f31cb60e2695668a4375096, findElement {using=xpath, value=//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\Hakan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53529/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f065bfc59f31cb60e2695668a4375096
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7f1602017660743fdb8935cab9719bec, clickElement {id=f.7A121D10DF95BDE33A5DBA80C7474A7E.d.7B0FFA5A80F6E9D95E5FB48E46F448BE.e.42}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55146}, msedge: {msedgedriverVersion: 123.0.2420.65 (49b6a5859239..., userDataDir: C:\Users\Hakan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55146/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (7f1602017660743fdb8935cab9719bec)] -&gt; css selector: a[class='user-cart-active_link__Y0FkN]
+Session ID: 7f1602017660743fdb8935cab9719bec">
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7f1602017660743fdb8935cab9719bec, clickElement {id=f.7A121D10DF95BDE33A5DBA80C7474A7E.d.7B0FFA5A80F6E9D95E5FB48E46F448BE.e.42}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55146}, msedge: {msedgedriverVersion: 123.0.2420.65 (49b6a5859239..., userDataDir: C:\Users\Hakan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55146/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (7f1602017660743fdb8935cab9719bec)] -> css selector: a[class='user-cart-active_link__Y0FkN]
+Session ID: 7f1602017660743fdb8935cab9719bec
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -28,90 +31,148 @@ Session ID: f065bfc59f31cb60e2695668a4375096
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy27.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	at utilities.ReusableMethods.visibleWait(ReusableMethods.java:107)
-	at stepdefinitions.Day_10_Hidden_Elements_StepDef.ıVerifyWithSuccessMessageBox(Day_10_Hidden_Elements_StepDef.java:119)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
-	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
-	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at stepdefinitions.day03_ScenarioOutline_StepDef.uye_ol_linki_tiklanir(day03_ScenarioOutline_StepDef.java:39)
+	at ✽.uye ol linki tiklanir(file:///C:/Users/Hakan/IdeaProjects/Cucumber_Ders/src/test/resources/features/day03_ScenarioOutline.feature:21)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given As a user got to orange...............................................passed
-Then verify url.............................................................passed
-And I enter username "Admin"................................................passed
-And I enter password "admin123".............................................passed
-When I click login button...................................................passed
-Then I verify in dashboard with "Dashboard".................................passed
-And I click admin link......................................................passed
-And I click add button......................................................passed
-And I select "Admin" with user role dropdown................................passed
-And I select "Enabled" with status dropdown.................................passed
-And I write "Muhammad Haseeb 1935" with employee name box...................passed
-And I "hakankara75" with new user name box..................................passed
-And I write "123456y" with new password box.................................passed
-And I write "123456y" with re new password box..............................passed
-When I click save button....................................................passed
-Then I verify "Successfully Saved" with success message box.................failed
+Given boyner sitesine gidilir...............................................passed
+When login ikonu ustune gidilir.............................................passed
+And uye ol linki tiklanir...................................................failed
+Then uyelik sayfasinda oldugu dogrulanir....................................skipped
+And uyelik sayfasinda ad bolumune "hakan" girilir...........................skipped
+And uyelik sayfasinda email bolumune"jaziah.poe" girilir....................skipped
+And uyelik sayfasinda password bolumune"123456a" girilir....................skipped
+And uyelik sayfasinda cep telefonu bolumune"5455444444" girilir.............skipped
+And uyelik metni icin "1" checkbox secilir..................................skipped
+And riza metni icin "1" checkbox secilir....................................skipped
+And uye ol butonu tiklanir..................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Scenario Outline" name="Negatif Uyelik Testi - Example #1.2" time="20.596">
+<failure type="org.openqa.selenium.ElementNotInteractableException" message="element not interactable
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6d7ee89931384802a5e47d492eb11ec1, clickElement {id=f.BBF780EE1D7F266B6B56900CF0E913BE.d.734F9EC373121703289ED5C5A99FFF19.e.42}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55206}, msedge: {msedgedriverVersion: 123.0.2420.65 (49b6a5859239..., userDataDir: C:\Users\Hakan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55206/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (6d7ee89931384802a5e47d492eb11ec1)] -&gt; css selector: a[class='user-cart-active_link__Y0FkN]
+Session ID: 6d7ee89931384802a5e47d492eb11ec1">
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6d7ee89931384802a5e47d492eb11ec1, clickElement {id=f.BBF780EE1D7F266B6B56900CF0E913BE.d.734F9EC373121703289ED5C5A99FFF19.e.42}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55206}, msedge: {msedgedriverVersion: 123.0.2420.65 (49b6a5859239..., userDataDir: C:\Users\Hakan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55206/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (6d7ee89931384802a5e47d492eb11ec1)] -> css selector: a[class='user-cart-active_link__Y0FkN]
+Session ID: 6d7ee89931384802a5e47d492eb11ec1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at stepdefinitions.day03_ScenarioOutline_StepDef.uye_ol_linki_tiklanir(day03_ScenarioOutline_StepDef.java:39)
+	at ✽.uye ol linki tiklanir(file:///C:/Users/Hakan/IdeaProjects/Cucumber_Ders/src/test/resources/features/day03_ScenarioOutline.feature:21)
+]]>
+</failure>
+<system-out><![CDATA[
+Given boyner sitesine gidilir...............................................passed
+When login ikonu ustune gidilir.............................................passed
+And uye ol linki tiklanir...................................................failed
+Then uyelik sayfasinda oldugu dogrulanir....................................skipped
+And uyelik sayfasinda ad bolumune "hakan" girilir...........................skipped
+And uyelik sayfasinda email bolumune"jaziah.poe@" girilir...................skipped
+And uyelik sayfasinda password bolumune"123456a" girilir....................skipped
+And uyelik sayfasinda cep telefonu bolumune"5455444444" girilir.............skipped
+And uyelik metni icin "1" checkbox secilir..................................skipped
+And riza metni icin "1" checkbox secilir....................................skipped
+And uye ol butonu tiklanir..................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Scenario Outline" name="Negatif Uyelik Testi - Example #1.3" time="9.834">
+<system-out><![CDATA[
+Given boyner sitesine gidilir...............................................passed
+When login ikonu ustune gidilir.............................................passed
+And uye ol linki tiklanir...................................................passed
+Then uyelik sayfasinda oldugu dogrulanir....................................passed
+And uyelik sayfasinda ad bolumune "hakan" girilir...........................passed
+And uyelik sayfasinda email bolumune"jaziah.poe@free2ducks" girilir.........passed
+And uyelik sayfasinda password bolumune"123456a" girilir....................passed
+And uyelik sayfasinda cep telefonu bolumune"5455444444" girilir.............passed
+And uyelik metni icin "1" checkbox secilir..................................passed
+And riza metni icin "1" checkbox secilir....................................passed
+And uye ol butonu tiklanir..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario Outline" name="Negatif Uyelik Testi - Example #1.4" time="0.115">
+<failure type="org.openqa.selenium.NoSuchSessionException" message="invalid session id
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [93d7534510aa29732bb141f54217cda1, get {url=https://www.boyner.com.tr}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55274}, msedge: {msedgedriverVersion: 123.0.2420.65 (49b6a5859239..., userDataDir: C:\Users\Hakan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55274/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 93d7534510aa29732bb141f54217cda1">
+<![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [93d7534510aa29732bb141f54217cda1, get {url=https://www.boyner.com.tr}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55274}, msedge: {msedgedriverVersion: 123.0.2420.65 (49b6a5859239..., userDataDir: C:\Users\Hakan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55274/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 93d7534510aa29732bb141f54217cda1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepdefinitions.day03_ScenarioOutline_StepDef.boyner_sitesine_gidilir(day03_ScenarioOutline_StepDef.java:28)
+	at ✽.boyner sitesine gidilir(file:///C:/Users/Hakan/IdeaProjects/Cucumber_Ders/src/test/resources/features/day03_ScenarioOutline.feature:5)
+]]>
+</failure>
+<system-out><![CDATA[
+Given boyner sitesine gidilir...............................................failed
+When login ikonu ustune gidilir.............................................skipped
+And uye ol linki tiklanir...................................................skipped
+Then uyelik sayfasinda oldugu dogrulanir....................................skipped
+And uyelik sayfasinda ad bolumune "hakan" girilir...........................skipped
+And uyelik sayfasinda email bolumune"jaziah.poe@free2ducks." girilir........skipped
+And uyelik sayfasinda password bolumune"123456a" girilir....................skipped
+And uyelik sayfasinda cep telefonu bolumune"5455444444" girilir.............skipped
+And uyelik metni icin "1" checkbox secilir..................................skipped
+And riza metni icin "1" checkbox secilir....................................skipped
+And uye ol butonu tiklanir..................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -86,7 +86,11 @@ public class Day_10_Hidden_Elements_StepDef {
         if(arg0.equals("Muhammad Haseeb 1935")){
             page.employee.click();
             page.employee.sendKeys("a");
-            ReusableMethods.visibleWait(page.employeeMenu.get(1),4);
+            try {
+                ReusableMethods.visibleWait(page.employeeMenu.get(1),4);
+            }catch (Exception e){
+
+            }
             page.employeeMenu.get(1).click();
         }else {
 
@@ -116,7 +120,7 @@ public class Day_10_Hidden_Elements_StepDef {
 
     @Then("I verify {string} with success message box")
     public void ıVerifyWithSuccessMessageBox(String expected) {
-        ReusableMethods.visibleWait(page.message,2);
+        ReusableMethods.visibleWait(page.message,1);
         String actual=page.message.getText();
         page.textAssertEquals(expected,actual);
     }

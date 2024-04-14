@@ -13,7 +13,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- asagidaki kod cucumber dependicies iceren 3 tanenin ortak version numarasidir -->
-        <cucumber.version>7.14.0</cucumber.version>
+        <cucumber.version>7.11.2</cucumber.version>
     </properties>
 
     <dependencies>
@@ -45,6 +45,21 @@
             <artifactId>cucumber-jvm</artifactId>
             <version>${cucumber.version}</version>
             <type>pom</type>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.9.0</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
@@ -82,7 +97,7 @@
         </dependency>
 
 
-        
+
     </dependencies>
 
     <build>
@@ -92,7 +107,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.1.2</version>
+                <version>3.1.0</version>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>   <!-- senaryo fail olursa calismaya devam et  -->
                     <skipTests>false</skipTests>
@@ -106,19 +121,22 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.1.2</version>
+                <version>3.1.0</version>
                 <configuration>
                     <parallel>methods</parallel>
                     <threadCount>2</threadCount> <!--aynı anda 2 browser çalıştırılacağı anlamına gelir. -->
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <forkCount>2</forkCount> <!-- iki ayrı işlemi başlatır ve her biri farklı bir test paketi çalıştırır. Bu, testlerin daha hızlı tamamlanmasını sağlar. Ancak, bu ayarın artırılması, sistemin kaynaklarını tüketebilir ve performans sorunlarına neden olabilir. -->
                     <reuseForks>true</reuseForks> <!--Maven önceki testlerde oluşturulmuş işlemleri yeniden kullanır -->
+                    <argLine>-Duser.language=en</argLine>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
                     <includes>
                         <include>**/runners/*Runner*.java</include>  <!-- bu yolun dogru oldugunu kontrol et  -->
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore> <!--testin başarısız olmasına rağmen diğer testlere devam eder ve sonunda tüm testleri çalıştırır. -->
                 </configuration>
             </plugin>
+
 
             <!-- cucumber report icin  -->
             <plugin>

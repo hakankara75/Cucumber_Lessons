@@ -11,7 +11,7 @@ public class day04_DataTable_Page {
     }
     @FindBy(xpath = "//label[text()='Doğum Günü ']")
     public WebElement dogumGunu;
-    @FindBy(xpath = "//div[@class='item-extra']/a")
+    @FindBy(css = "img.home-page-switch__extraImg")
     public WebElement hediye;
     @FindBy(xpath = "(//button[@class='ab-message-button'])[1]")
     public WebElement uyari;
