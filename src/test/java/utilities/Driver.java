@@ -44,7 +44,6 @@ public class Driver {
                     //asagidaki kodlar file download yaparken default deger olan download klasoru yerine bir yol vermemize yarar
 //                    ChromeOptions options = new ChromeOptions();
 //                    String filePath ="C:\\Hakan Arsiv";
-
 //                    Map<String, Object> prefs = new HashMap<>();
 //                    prefs.put("download.default_directory", filePath);
 //                    options.setExperimentalOption("prefs", prefs);
