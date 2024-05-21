@@ -1,0 +1,12 @@
+PROJEYİ SELENIUM GRID E BAĞLAMA
+Selenium Grid indir
+inen jar dosyasını proje içine resources directory altına bir directory içine at.
+konsol ekranı aç
+konsola açtığın direcyory yoluna gidecek kodu yaz:
+cd src/test/resources/seleniumGrid
+
+konsolda directory içine girince şu kodu yaz:
+java -jar selenium-server-4.21.0.jar standalone
+
+sonra runner classtan çalıştır
+ya da paralel için mvn clean verify

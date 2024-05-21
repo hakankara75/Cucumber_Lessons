@@ -6,7 +6,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.safari.SafariOptions;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
@@ -25,6 +31,7 @@ public class Driver {
 
     }
     static WebDriver driver;
+    static DesiredCapabilities capabilities=new DesiredCapabilities();
 
     public static WebDriver getDriver() {
         /*
@@ -35,11 +42,11 @@ public class Driver {
         if (driver == null) {
             switch (ConfigReader.getProperty("browser")) {
                 case "chrome":
-                   System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver-win64\\chromedriver.exe");
-                    ChromeOptions options= new ChromeOptions();
-                    options.addArguments("--headless"); // Headless test yapmak icin
-                    options.addArguments("--disaple-gpu"); //GPU kullanimini devre disi birakir
-                    driver= new ChromeDriver(options); //bu kodu headless testte acarsinizi
+                  //System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver-win64\\chromedriver.exe");
+//                    ChromeOptions options= new ChromeOptions();
+//                    options.addArguments("--headless"); // Headless test yapmak icin
+//                    options.addArguments("--disaple-gpu"); //GPU kullanimini devre disi birakir
+//                   driver= new ChromeDriver(options); //bu kodu headless testte acarsinizi
 
                     //asagidaki kodlar file download yaparken default deger olan download klasoru yerine bir yol vermemize yarar
 //                    ChromeOptions options = new ChromeOptions();
@@ -52,6 +59,17 @@ public class Driver {
 
                     driver = new ChromeDriver(new ChromeOptions().addArguments("--remote-allow-origins=*"));
                     break;
+                case "seleniumGridChrome":
+
+                    FirefoxOptions options=new FirefoxOptions();
+                    capabilities.setCapability(ChromeOptions.CAPABILITY,options);
+                    try {
+                        driver=new RemoteWebDriver(new URL("http://192.168.1.101:4444"),capabilities);
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+
                 case "edge":
 
                     driver = new EdgeDriver(new EdgeOptions().addArguments("--remote-allow-origins=*"));

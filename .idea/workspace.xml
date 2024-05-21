@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe9bb4d5-54d7-4e79-b4af-51fde701f9b1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/seleniumGrid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/seleniumGrid/selenium-server-4.21.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/PdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Report/PdfReport/ExtentPdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/SparkReport/Spark.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/embedded1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/embedded2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/embedded2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestOutput/failed_scenario.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TestOutput/failed_scenario.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/htmlReport/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/htmlReport/cucumber.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +32,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hakankara75&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hakankara75/Cucumber_Lessons.git&quot;,
+    &quot;accountId&quot;: &quot;84c66ff9-131b-4ed3-8139-a021ae8ee00a&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
@@ -34,11 +56,15 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;JUnit.Runner.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Cucumber_Ders [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Cucumber_Ders [install].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hakan/IdeaProjects/Appium_Ders&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hakan/IdeaProjects/Cucumber_Ders/src/test/resources/seleniumGrid&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -47,11 +73,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hakan\IdeaProjects\Cucumber_Ders\src\test\resources\seleniumGrid" />
       <recent name="C:\Users\Hakan\IdeaProjects\Cucumber_Ders" />
       <recent name="C:\Users\Hakan\IdeaProjects\Cucumber_Ders\.idea" />
       <recent name="C:\Users\HakanBatirhan\IdeaProjects\Cucumber_Ders\src\test\resources" />
       <recent name="C:\Users\HakanBatirhan\IdeaProjects\Cucumber_Ders\src\test\resources\features" />
-      <recent name="C:\Users\HakanBatirhan\IdeaProjects\Cucumber_Ders\src\test\java\runners" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HakanBatirhan\IdeaProjects\Cucumber_Ders\src\test\resources" />
@@ -162,6 +188,7 @@
                 <option value="test" />
               </list>
             </option>
+            <option name="multimoduleDir" />
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />

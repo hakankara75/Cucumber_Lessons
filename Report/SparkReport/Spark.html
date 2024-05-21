@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Getir Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 14, 2024 08:41:50 PM</span></a>
+<a href="#"><span class="badge badge-primary">May 21, 2024 01:33:10 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 14, 2024 08:41:50 PM</h3>
+<h3>May 21, 2024 01:33:10 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 14, 2024 08:41:54 PM</h3>
+<h3>May 21, 2024 01:33:22 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
+<div><small data-tooltip='57%'><b>4</b> steps passed</small></div>
 <div>
-<small data-tooltip='28%'><b>2</b> steps failed,
-<b>5</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='14%'><b>1</b> steps failed,
+<b>2</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Hooks Testi":3.053
+"Hooks Testi":11.431
 };
 </script>
 <div class="row">
@@ -218,10 +218,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 0,
-failGrandChild: 2,
+passGrandChild: 4,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 5,
+skipGrandChild: 2,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -256,7 +256,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Hooks Testi</p>
             <p class="text-sm">
-              <span>8:41:51 PM</span> / <span>00:00:03:053</span>
+              <span>1:33:11 PM</span> / <span>00:00:11:431</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -265,9 +265,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Hooks Testi</h5>
-<span class='badge badge-success'>04.14.2024 8:41:51 PM</span>
-<span class='badge badge-danger'>04.14.2024 8:41:54 PM</span>
-<span class='badge badge-default'>00:00:03:053</span>
+<span class='badge badge-success'>05.21.2024 1:33:11 PM</span>
+<span class='badge badge-danger'>05.21.2024 1:33:22 PM</span>
+<span class='badge badge-default'>00:00:11:431</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -280,109 +280,38 @@ eventsCount: 5,
     <div class="card-header" role="tab">
       <div class="card-title">
         <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Hooks Testi Pozitif</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step fail-bg" title="stepdefinitions.day04_DataTable_StefDef.sitesineGidilir(java.lang.String)">
+              <div class="step pass-bg" title="stepdefinitions.day04_DataTable_StefDef.sitesineGidilir(java.lang.String)">
                 <span>Given "trendyol" sitesine gidilir</span>
       <div>
-        <textarea disabled class="code-block">io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.day04_DataTable_StefDef
-	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
-	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
-	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
-	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
-	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
-	... 46 more
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 121
-Current browser version is 123.0.6312.107 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'DESKTOP-6Q36UJF', ip: '192.168.1.104'
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --headless, --disaple-gpu], extensions: []}}]}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-	at utilities.Driver.getDriver(Driver.java:42)
-	at pages.day04_DataTable_Page.<init>(day04_DataTable_Page.java:10)
-	at stepdefinitions.day04_DataTable_StefDef.<init>(day04_DataTable_StefDef.java:22)
-	... 51 more
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.day05_Hooks_StepDef.arama_kutusuna_yazılır(java.lang.String)">
+                <span>And arama kutusuna "ekose gömlek" yazılır</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.day05_Hooks_StepDef.aramaSonuclarininGoruntulendigiDogrulanir()">
+                <span>Then arama sonuclarinin goruntulendigi dogrulanir</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.day05_Hooks_StepDef.sonuc_sayfasinda_oldugu_dogrulanir(java.lang.String)">
+                <span>Then sonuc sayfasinda "iran yapıştırıcısı" oldugu dogrulanir</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ekose gömlek]> but was:<[iran yapıştırıcısı]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepdefinitions.day05_Hooks_StepDef.sonuc_sayfasinda_oldugu_dogrulanir(day05_Hooks_StepDef.java:40)
+	at ✽.sonuc sayfasinda "iran yapıştırıcısı" oldugu dogrulanir(file:///C:/Users/Hakan/IdeaProjects/Cucumber_Ders/src/test/resources/features/day05_Hooks.feature:9)
 </textarea>
       
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepdefinitions.day05_Hooks_StepDef.arama_kutusuna_yazılır(java.lang.String)">
-                <span>And arama kutusuna "ekose gömlek" yazılır</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepdefinitions.day05_Hooks_StepDef.aramaSonuclarininGoruntulendigiDogrulanir()">
-                <span>Then arama sonuclarinin goruntulendigi dogrulanir</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepdefinitions.day05_Hooks_StepDef.sonuc_sayfasinda_oldugu_dogrulanir(java.lang.String)">
-                <span>Then sonuc sayfasinda "iran yapıştırıcısı" oldugu dogrulanir</span>
-      <div>Step skipped
       </div>
               </div>
               <div class="step skip-bg" title="stepdefinitions.day05_Hooks_StepDef.sonucSayfasindakiAramaSonucSayisiAlinir()">
@@ -395,33 +324,15 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
       <div>Step skipped
       </div>
               </div>
-              <div class="step fail-bg" title="AFTER">
+              <div class="step pass-bg" title="AFTER">
                 <span>runners.Hooks.tearDownScenarios(io.cucumber.java.Scenario)</span>
+      <div>failed_scenario_Hooks Testi Pozitif
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 121
-Current browser version is 123.0.6312.107 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'DESKTOP-6Q36UJF', ip: '192.168.1.104'
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --headless, --disaple-gpu], extensions: []}}]}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-	at utilities.Driver.getDriver(Driver.java:42)
-	at runners.Hooks.tearDownScenarios(Hooks.java:26)
-</textarea>
-      
       </div>
               </div>
           </div>
@@ -471,7 +382,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>20:41:51 PM</td>
+<td>13:33:11 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Hooks Testi Pozitif</a>
 <div class="">
@@ -495,7 +406,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -504,12 +415,12 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.SessionNotCreatedException</p>
+<p class="name">org.junit.ComparisonFailure</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.SessionNotCreatedException</h4>
+<h4>org.junit.ComparisonFailure</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -523,47 +434,11 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>20:41:54 PM</td>
+<td>13:33:20 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='10'>runners.Hooks.tearDownScenarios(io.cucumber.java.Scenario)</a>
+<a href="#" class="linked" test-id='1' id='7'>Then sonuc sayfasinda "iran yapıştırıcısı" oldugu dogrulanir</a>
 <div class="">
-<span class="badge badge-default">Hooks Testi.Hooks Testi Pozitif.runners.Hooks.tearDownScenarios(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">io.cucumber.core.exception.CucumberException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>io.cucumber.core.exception.CucumberException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>20:41:51 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='4'>Given "trendyol" sitesine gidilir</a>
-<div class="">
-<span class="badge badge-default">Hooks Testi.Hooks Testi Pozitif.Given "trendyol" sitesine gidilir</span>
+<span class="badge badge-default">Hooks Testi.Hooks Testi Pozitif.Then sonuc sayfasinda "iran yapıştırıcısı" oldugu dogrulanir</span>
 </div>
 </td>
 </tr>
