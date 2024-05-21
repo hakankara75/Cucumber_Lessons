@@ -62,7 +62,10 @@ public class Driver {
                 case "seleniumGridChrome":
 
                     FirefoxOptions options=new FirefoxOptions();
-                    capabilities.setCapability(ChromeOptions.CAPABILITY,options);
+                    capabilities.setCapability(FirefoxOptions.FIREFOX_OPTIONS,options);
+
+//                    ChromeOptions options=new ChromeOptions();
+//                    capabilities.setCapability(ChromeOptions.CAPABILITY,options);
                     try {
                         driver=new RemoteWebDriver(new URL("http://192.168.1.101:4444"),capabilities);
                     } catch (MalformedURLException e) {

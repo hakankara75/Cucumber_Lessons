@@ -124,9 +124,9 @@
                 <version>3.1.0</version>
                 <configuration>
                     <parallel>methods</parallel>
-                    <threadCount>2</threadCount> <!--aynı anda 2 browser çalıştırılacağı anlamına gelir. -->
+                    <threadCount>8</threadCount> <!--aynı anda 2 browser çalıştırılacağı anlamına gelir. -->
                     <perCoreThreadCount>false</perCoreThreadCount>
-                    <forkCount>2</forkCount> <!-- iki ayrı işlemi başlatır ve her biri farklı bir test paketi çalıştırır. Bu, testlerin daha hızlı tamamlanmasını sağlar. Ancak, bu ayarın artırılması, sistemin kaynaklarını tüketebilir ve performans sorunlarına neden olabilir. -->
+                    <forkCount>8</forkCount> <!-- iki ayrı işlemi başlatır ve her biri farklı bir test paketi çalıştırır. Bu, testlerin daha hızlı tamamlanmasını sağlar. Ancak, bu ayarın artırılması, sistemin kaynaklarını tüketebilir ve performans sorunlarına neden olabilir. -->
                     <reuseForks>true</reuseForks> <!--Maven önceki testlerde oluşturulmuş işlemleri yeniden kullanır -->
                     <argLine>-Duser.language=en</argLine>
                     <argLine>-Dfile.encoding=UTF-8</argLine>

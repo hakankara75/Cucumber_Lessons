@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="14.697" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Hooks Testi" name="Hooks Testi Pozitif" time="14.318">
+<testsuite name="Cucumber" time="89.837" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Hooks Testi" name="Hooks Testi Pozitif" time="87.48">
 <failure type="org.junit.ComparisonFailure" message="expected:&lt;[ekose gömlek]&gt; but was:&lt;[iran yapıştırıcısı]&gt;">
 <![CDATA[org.junit.ComparisonFailure: expected:<[ekose gömlek]> but was:<[iran yapıştırıcısı]>
 	at org.junit.Assert.assertEquals(Assert.java:117)

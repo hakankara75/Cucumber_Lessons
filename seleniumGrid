@@ -1,6 +1,7 @@
 PROJEYİ SELENIUM GRID E BAĞLAMA
 Selenium Grid indir
 inen jar dosyasını proje içine resources directory altına bir directory içine at.
+
 konsol ekranı aç
 konsola açtığın direcyory yoluna gidecek kodu yaz:
 cd src/test/resources/seleniumGrid

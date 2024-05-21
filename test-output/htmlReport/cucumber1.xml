@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="68.779" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Paralel Test" name="Paralel Test 01" time="68.703">
+<testsuite name="Cucumber" time="128.936" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Paralel Test" name="Paralel Test 01" time="125.995">
 <failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: (//button[@class='dn-slide-accept-btn'])[1]' (tried for 15 second(s) with 500 milliseconds interval)">
 <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: (//button[@class='dn-slide-accept-btn'])[1]' (tried for 15 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
@@ -13,9 +13,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [5e6b945e-2161-4295-bd2e-dd11dee7fc61, findElement {using=xpath, value=(//button[@class='dn-slide-accept-btn'])[1]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 126.0, moz:accessibilityChecks: false, moz:buildID: 20240509170740, moz:debuggerAddress: 127.0.0.1:22290, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 248, moz:profile: C:\Users\Hakan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.101:4444/ses..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 5e6b945e-2161-4295-bd2e-dd11dee7fc61
+Command: [df9b95b1-1d9c-4c89-bb17-7886f68f10f0, findElement {using=xpath, value=(//button[@class='dn-slide-accept-btn'])[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 126.0, moz:accessibilityChecks: false, moz:buildID: 20240509170740, moz:debuggerAddress: 127.0.0.1:16345, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14948, moz:profile: C:\Users\Hakan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.101:4444/ses..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: df9b95b1-1d9c-4c89-bb17-7886f68f10f0
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -122,6 +122,58 @@ When ilk urun favorilere eklenir............................................skip
 And giris sayfasi acilir....................................................skipped
 And email ve passwordkutusuna girilir.......................................skipped
 Then devam butonunun oldugu dogrulanir......................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
+ase>
+</testsuite>
+.......skipped
+And riza metni icin "1" checkbox secilir....................................skipped
+And uye ol butonu tiklanir..................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Scenario Outline" name="Negatif Uyelik Testi - Example #1.4" time="0.372">
+<failure type="org.openqa.selenium.NoSuchSessionException" message="Tried to run command without establishing a connection
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [53137dec-be49-42ad-9436-7e9f9e8c262d, get {url=https://www.boyner.com.tr}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 126.0, moz:accessibilityChecks: false, moz:buildID: 20240509170740, moz:debuggerAddress: 127.0.0.1:30725, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22904, moz:profile: C:\Users\Hakan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.101:4444/ses..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 53137dec-be49-42ad-9436-7e9f9e8c262d">
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [53137dec-be49-42ad-9436-7e9f9e8c262d, get {url=https://www.boyner.com.tr}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 126.0, moz:accessibilityChecks: false, moz:buildID: 20240509170740, moz:debuggerAddress: 127.0.0.1:30725, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22904, moz:profile: C:\Users\Hakan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.101:4444/ses..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 53137dec-be49-42ad-9436-7e9f9e8c262d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepdefinitions.day03_ScenarioOutline_StepDef.boyner_sitesine_gidilir(day03_ScenarioOutline_StepDef.java:28)
+	at ✽.boyner sitesine gidilir(file:///C:/Users/Hakan/IdeaProjects/Cucumber_Ders/src/test/resources/features/day03_ScenarioOutline.feature:5)
+]]>
+</failure>
+<system-out><![CDATA[
+Given boyner sitesine gidilir...............................................failed
+When login ikonu ustune gidilir.............................................skipped
+And uye ol linki tiklanir...................................................skipped
+Then uyelik sayfasinda oldugu dogrulanir....................................skipped
+And uyelik sayfasinda ad bolumune "hakan" girilir...........................skipped
+And uyelik sayfasinda email bolumune"jaziah.poe@free2ducks." girilir........skipped
+And uyelik sayfasinda password bolumune"123456a" girilir....................skipped
+And uyelik sayfasinda cep telefonu bolumune"5455444444" girilir.............skipped
+And uyelik metni icin "1" checkbox secilir..................................skipped
+And riza metni icin "1" checkbox secilir....................................skipped
+And uye ol butonu tiklanir..................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>
