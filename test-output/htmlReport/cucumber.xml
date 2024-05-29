@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="76.621" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Hooks Testi" name="Hooks Testi Pozitif" time="74.762">
-<failure type="java.lang.AssertionError">
-<![CDATA[java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.day05_Hooks_StepDef.aramaSonuclarininGoruntulendigiDogrulanir(day05_Hooks_StepDef.java:46)
-	at ✽.arama sonuclarinin goruntulendigi dogrulanir(file:///C:/Users/Hakan/IdeaProjects/Cucumber_Ders/src/test/resources/features/day05_Hooks.feature:6)
-]]>
-</failure>
+<testsuite name="Cucumber" time="20.212" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Amazon" name="Amazon" time="19.688">
 <system-out><![CDATA[
-Given "trendyol" sitesine gidilir...........................................passed
-And arama kutusuna "ekose gömlek" yazılır...................................passed
-Then arama sonuclarinin goruntulendigi dogrulanir...........................failed
-Then sonuc sayfasinda "iran yapıştırıcısı" oldugu dogrulanir................skipped
-When sonuc sayfasindaki arama sonuc sayisi alinir...........................skipped
-Then 20 den fazla urunun ekranda goruntulendigi dogrulanir..................skipped
+Given Amazon sitesine gidilir...............................................passed
+When yeni cikanlar secilir..................................................passed
+Then gorunen urunlerde firca oldugu dogrulanir..............................passed
 ]]></system-out>
 </testcase>
 </testsuite>

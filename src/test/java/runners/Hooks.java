@@ -8,6 +8,10 @@ import utilities.Driver;
 
 
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import static utilities.ReusableMethods.getApkTags;
 
 public class Hooks {
     /*
@@ -19,15 +23,27 @@ public class Hooks {
         System.out.println("Before Metotu");
     }
     @After
-    public void tearDownScenarios(Scenario scenario){
+    public void tearDownScenarios(Scenario scenario) {
+        List<String> tags = (List<String>) scenario.getSourceTagNames();
+        List<String> exeptList = new ArrayList<>();
+        exeptList.add("@login");
+        boolean conclusionBoolean = getApkTags(tags, exeptList);
+        System.out.println("conclusionBoolean = " + conclusionBoolean);
+
         System.out.println("After Metotu");
 //        Eger bir Scenario FAIL ederse, ekran goruntusunu al ve rapora ekle
-        if (scenario.isFailed()) {
+
             final byte[] failedScreenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
 //                       ekran goruntusu    file tipi                  ekran goruntusunun adi
+        if (scenario.isFailed()) {
             scenario.attach(failedScreenshot, "image/png", "failed_scenario_" + scenario.getName());
-
-            Driver.closeDriver(); // Burasi tarayici kapatir
+            Driver.closeDriver();
         }
+            if (!conclusionBoolean == true) {
+                Driver.closeDriver(); // Burasi tarayici kapatir
+            }
+
     }
+
+
 }

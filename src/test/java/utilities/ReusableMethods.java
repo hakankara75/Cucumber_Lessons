@@ -20,6 +20,26 @@ import java.util.Date;
 import java.util.List;
 
 public class ReusableMethods {
+    /**
+     * Bu metot ile scenariolarin tagleri alinir. Bu tagler'e bakilarak kosulan scenario sonrasinda
+     * driver kapatilmak istenmezse @After icinde if kurularak closeDriver() calistirilmaz.
+     * @param tags terine @After anatosyonlu metodun scenario parametresi verilir
+     * @param exeptList yerine driver kapatmak istemedigimiz scneario tagleri list halinde verilir.
+     * @return boolean olarak doner
+     */
+    public static boolean getApkTags(List<String> tags, List<String> exeptList ){
+        boolean isTrue= true;
+
+        for (String tag:tags){
+            for (int i = 0; i < exeptList.size(); i++) {
+                String str= exeptList.get(i);
+                if(!str.equals(tag)){
+                    isTrue=false;
+                }
+            }
+        }
+        return isTrue;
+    }
 
     /**
      * Bu metot Action class kullanarak bir webelementin ustune gidip bekler
