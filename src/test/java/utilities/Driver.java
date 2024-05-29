@@ -9,7 +9,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.safari.SafariOptions;
+
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -59,7 +59,7 @@ public class Driver {
 
                     driver = new ChromeDriver(new ChromeOptions().addArguments("--remote-allow-origins=*"));
                     break;
-                case "seleniumGridChrome":
+                case "seleniumGrid":
 
                     FirefoxOptions options=new FirefoxOptions();
                     capabilities.setCapability(FirefoxOptions.FIREFOX_OPTIONS,options);
@@ -67,7 +67,7 @@ public class Driver {
 //                    ChromeOptions options=new ChromeOptions();
 //                    capabilities.setCapability(ChromeOptions.CAPABILITY,options);
                     try {
-                        driver=new RemoteWebDriver(new URL("http://192.168.1.101:4444"),capabilities);
+                        driver=new RemoteWebDriver(new URL("http://192.168.1.100:4444"),capabilities);
                     } catch (MalformedURLException e) {
                         e.printStackTrace();
                     }

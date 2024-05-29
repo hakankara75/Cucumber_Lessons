@@ -9,5 +9,7 @@ cd src/test/resources/seleniumGrid
 konsolda directory içine girince şu kodu yaz:
 java -jar selenium-server-4.21.0.jar standalone
 
+selenium grid penceresinde görünen browser sayısı kadar runner class aç
+
 sonra runner classtan çalıştır
 ya da paralel için mvn clean verify

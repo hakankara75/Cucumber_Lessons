@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe9bb4d5-54d7-4e79-b4af-51fde701f9b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/Runner2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/Runner3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/Runner4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/Runner5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/Runner6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/Runner7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/PdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Report/PdfReport/ExtentPdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/SparkReport/Spark.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/embedded1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestOutput/htmlReport/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestOutput/htmlReport/cucumber.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestOutput/htmlReport/cucumberHooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestOutput/htmlReport/cucumberHooks.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestOutput/htmlReport/cucumberHooks1.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestOutput/htmlReport/cucumberHooks1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seleniumGrid" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumGrid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" afterDir="false" />
@@ -61,23 +58,23 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.Runner.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Cucumber_Ders [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Cucumber_Ders [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hakan/IdeaProjects/Cucumber_Ders/src/test/resources/seleniumGrid&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.Runner.executor": "Run",
+    "Maven.Cucumber_Ders [clean].executor": "Run",
+    "Maven.Cucumber_Ders [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Hakan/IdeaProjects/JavaDers",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Hakan\IdeaProjects\Cucumber_Ders\src\test\resources\seleniumGrid" />
