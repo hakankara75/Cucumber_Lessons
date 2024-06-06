@@ -9,6 +9,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 import static org.junit.Assert.assertEquals;
+import static utilities.ReusableMethods.click;
 
 public class day01_Background_StepDef {
     /*
@@ -43,7 +44,7 @@ public class day01_Background_StepDef {
 
     @Then("giris butonuna basilir")
     public void giris_butonuna_basilir() {
-        loginNegatif.giris.click();
+        click(loginNegatif.giris);
     }
 
     @Then("eposta girilir")

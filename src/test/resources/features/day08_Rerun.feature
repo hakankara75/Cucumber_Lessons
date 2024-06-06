@@ -5,7 +5,7 @@ Feature: US01 Cok satan edebiyat kitapları
     And arama butonuna basar
    And arama kutusuna "qa tester" yazar
    Then sonuçlarda "qa tester" oldugunu dogrular
-  @rerun
+  @rerun @regresyon
   Scenario: Mynet Rerun Testi
     Given "mynet" sitesine gidilir
     And arama butonuna basar

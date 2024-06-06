@@ -4,7 +4,7 @@ Feature: Scenario Outline
     Background: siteye giris
       Given boyner sitesine gidilir
       When login ikonu ustune gidilir
-
+  @regresyon
     Scenario: Uyelik Testi
       And uye ol linki tiklanir
       Then uyelik sayfasinda oldugu dogrulanir

@@ -21,7 +21,7 @@ public class Amazon_StepDef {
     @When("yeni cikanlar secilir")
     public void yeniCikanlarSecilir() {
         try{
-        amazonPage.yeniCikanlar.click();
+        ReusableMethods.click(amazonPage.yeniCikanlar);
 }catch (Exception e){
 
     }
@@ -34,5 +34,6 @@ public class Amazon_StepDef {
 
         }
     }
+
 
 }

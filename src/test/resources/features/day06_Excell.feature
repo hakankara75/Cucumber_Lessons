@@ -1,5 +1,5 @@
 Feature: Herokuapp Excell Login
-
+  @regresyon
   Scenario: TC01_Positive_Login_Testi
     Given "herokuapp" sitesine gidilir
     And kullanici exceldeki "pozitive" sayfasindaki kullanici bilgileri ile login olur

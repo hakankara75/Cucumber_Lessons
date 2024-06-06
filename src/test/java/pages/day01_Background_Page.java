@@ -12,7 +12,7 @@ public class day01_Background_Page {
     }
     @FindBy(css = "i[class='etsfonticon login-user']")
     public WebElement dropDown;
-    @FindBy(css = "button[data-target='#modalSignIn']")
+    @FindBy(css = "div[class='css-1uj0j32'] button:nth-child(1)")
     public WebElement giris;
     @FindBy(css = "button[data-target='#modalSignUp']")
     public WebElement uyeOl;

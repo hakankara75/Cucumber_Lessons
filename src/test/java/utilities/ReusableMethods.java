@@ -19,7 +19,49 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import static utilities.Driver.driver;
+
 public class ReusableMethods {
+    //Click Method
+    public static void click(WebElement element) {
+        try {
+            element.click();
+        } catch (Exception e) {
+            try {
+                new Actions(driver).moveToElement(element).click();
+            } catch (Exception e2) {
+                try {
+                    JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+                    js.executeScript("arguments[0].click();", element);
+                } catch (Exception e3) {
+
+                }
+            }
+
+        }
+    }
+
+//    public void clicks(WebElement element) {
+//        wait.until(driver1 -> {
+//                    try {
+//                        element.click();
+//                        return true;
+//                    } catch (java.lang.Exception e1) {
+//                        try {
+//                            new Actions(driver1).moveToElement(element).click();
+//                            return true;
+//                        } catch (java.lang.Exception e2) {
+//                            try {
+//                                ((JavascriptExecutor) driver1).executeScript("arguments[0].click()'", element);
+//                                return true;
+//                            } catch (java.lang.Exception e3) {
+//                                return false;
+//                            }
+//                        }
+//                    }
+//        });
+
+
     /**
      * Bu metot ile scenariolarin tagleri alinir. Bu tagler'e bakilarak kosulan scenario sonrasinda
      * driver kapatilmak istenmezse @After icinde if kurularak closeDriver() calistirilmaz.
@@ -184,15 +226,7 @@ public class ReusableMethods {
         System.out.println(satirSutun.getText());
     }
 
-    //Click Method
-    public static void click(WebElement element) {
-        try {
-            element.click();
-        } catch (Exception e) {
-            JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
-            js.executeScript("arguments[0].click();", element);
-        }
-    }
+
 
     //JS Scroll
     public static void scroll(WebElement element) {

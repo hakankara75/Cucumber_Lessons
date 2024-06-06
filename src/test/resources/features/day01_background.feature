@@ -5,7 +5,7 @@ Feature: ets Tur sitesi login testi
     Given ets tur sitesine gidilir
     And login butonu ustune gidilir
 
-  @login
+  @login @regresyon @webui
   Scenario: ets tur login
     When giris butonuna basilir
     And eposta girilir
@@ -13,7 +13,7 @@ Feature: ets Tur sitesi login testi
     When giris yap butonuna basilir
     Then sayfaya gidilemedigi dogrulanir
 
-
+@logout @smoke @webui
   Scenario: ets tur login
     Then uye ol butonuna basilir
     And ad girilir

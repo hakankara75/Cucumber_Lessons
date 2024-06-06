@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="20.212" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Amazon" name="Amazon" time="19.688">
+<testsuite name="Cucumber" time="41.447" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="hooks" name="user" time="40.892">
 <system-out><![CDATA[
-Given Amazon sitesine gidilir...............................................passed
-When yeni cikanlar secilir..................................................passed
-Then gorunen urunlerde firca oldugu dogrulanir..............................passed
+Given got to practice.......................................................passed
+And click on shop for admin.................................................passed
+When click on android basket button.........................................passed
+Then verify basket..........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

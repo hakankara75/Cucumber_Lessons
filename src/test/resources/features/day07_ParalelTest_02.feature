@@ -1,4 +1,4 @@
-@paraleTest02
+@paraleTest02 @regresyon
 Feature: Paralel Test
   Scenario: Negatif Paralel Test 02
     Given "pazarama" sitesine gidilir
