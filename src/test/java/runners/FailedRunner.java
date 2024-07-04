@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",  //cucumber report için
                 "junit:TestOutput/htmlReport/cucumber.xml", //xml report için
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",//spark report icin
-                "rerun:target/failed_scenario.txt"},//rerun hata veren testleri kaydedip yeniden otomatik kosmak icin
+                "rerun:TestOutput/failed_scenario.txt"},//rerun hata veren testleri kaydedip yeniden otomatik kosmak icin
         //  monochrome = true, //console okunakli hale getirir, renksiz yapar
         features = "@TestOutput/failed_scenario.txt", //----------------------
         glue = {"stepdefinitions", "runners"},
