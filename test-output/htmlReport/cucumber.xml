@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="94.622" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="US01 Cok satan edebiyat kitapları" name="Mynet Rerun Testi" time="93.629">
+<testsuite name="Cucumber" time="75.985" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="US01 Cok satan edebiyat kitapları" name="Mynet Rerun Testi" time="74.627">
 <failure type="java.lang.AssertionError">
 <![CDATA[java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
