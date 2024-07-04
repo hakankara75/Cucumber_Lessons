@@ -109,7 +109,7 @@
 
     <build>
         <plugins>
-            <!-- paralel test icin  -->
+            <!-- failed testler için  -->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

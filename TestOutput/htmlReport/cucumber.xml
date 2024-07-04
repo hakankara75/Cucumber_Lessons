@@ -1,40 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="89.552" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="US01 Cok satan edebiyat kitapları" name="Mynet Rerun Testi" time="86.275">
-<failure type="org.openqa.selenium.JavascriptException" message="TypeError: arguments[0] is null
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [09081473-2b14-4102-9fe0-31e35ee69a15, executeScript {script=arguments[0].click();, args=[null]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 126.0, moz:accessibilityChecks: false, moz:buildID: 20240509170740, moz:debuggerAddress: 127.0.0.1:21086, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17252, moz:profile: C:\Users\Hakan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.100:4444/ses..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 09081473-2b14-4102-9fe0-31e35ee69a15">
-<![CDATA[org.openqa.selenium.JavascriptException: TypeError: arguments[0] is null
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [09081473-2b14-4102-9fe0-31e35ee69a15, executeScript {script=arguments[0].click();, args=[null]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 126.0, moz:accessibilityChecks: false, moz:buildID: 20240509170740, moz:debuggerAddress: 127.0.0.1:21086, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17252, moz:profile: C:\Users\Hakan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.100:4444/ses..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 09081473-2b14-4102-9fe0-31e35ee69a15
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
-	at utilities.ReusableMethods.clickJSElementWithJavaScript(ReusableMethods.java:508)
-	at stepdefinitions.day08_Rerun_StepDef.aramaKutusunaYazar(day08_Rerun_StepDef.java:37)
-	at ✽.arama kutusuna "hava durumu" yazar(file:///C:/Users/Hakan/IdeaProjects/Cucumber_Ders/src/test/resources/features/day08_Rerun.feature:12)
+<testsuite name="Cucumber" time="4.352" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="US01 Cok satan edebiyat kitapları" name="Mynet Rerun Testi" time="4.114">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at stepdefinitions.day08_Rerun_StepDef.aramaButonunaBasar(day08_Rerun_StepDef.java:29)
+	at ✽.arama butonuna basar(file:///C:/Users/Hakan/IdeaProjects/Cucumber_Ders/src/test/resources/features/day08_Rerun.feature:11)
 ]]>
 </failure>
 <system-out><![CDATA[
 Given "mynet" sitesine gidilir..............................................passed
-And arama butonuna basar....................................................passed
-And arama kutusuna "hava durumu" yazar......................................failed
+And arama butonuna basar....................................................failed
+And arama kutusuna "hava durumu" yazar......................................skipped
 Then sonuçlarda "testere" oldugunu dogrular.................................skipped
 ]]></system-out>
 </testcase>

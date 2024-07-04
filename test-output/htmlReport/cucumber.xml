@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="41.447" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="hooks" name="user" time="40.892">
+<testsuite name="Cucumber" time="7.056" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="US01 Cok satan edebiyat kitapları" name="Mynet Rerun Testi" time="6.861">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at stepdefinitions.day08_Rerun_StepDef.aramaButonunaBasar(day08_Rerun_StepDef.java:29)
+	at ✽.arama butonuna basar(file:///C:/Users/Hakan/IdeaProjects/Cucumber_Ders/src/test/resources/features/day08_Rerun.feature:11)
+]]>
+</failure>
 <system-out><![CDATA[
-Given got to practice.......................................................passed
-And click on shop for admin.................................................passed
-When click on android basket button.........................................passed
-Then verify basket..........................................................passed
+Given "mynet" sitesine gidilir..............................................passed
+And arama butonuna basar....................................................failed
+And arama kutusuna "hava durumu" yazar......................................skipped
+Then sonuçlarda "testere" oldugunu dogrular.................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

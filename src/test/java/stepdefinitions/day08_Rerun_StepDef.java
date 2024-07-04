@@ -9,6 +9,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 
@@ -25,6 +26,7 @@ public class day08_Rerun_StepDef {
 
     @And("arama butonuna basar")
     public void aramaButonunaBasar() {
+        assertFalse(true);
         ReusableMethods.clickJSElementWithJavaScript("document.querySelector(\"#myGlobalSearchBtn\")");
 
     }

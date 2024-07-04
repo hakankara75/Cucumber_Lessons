@@ -42,7 +42,7 @@ public class Hooks {
         System.out.println("Bu metoto @user tagi için çalıştı. Before Metotu çalıştı.");
     }
     @After("@login")
-    public void tearDownScenarios(Scenario scenario) {
+    public void aftertearDownScenarios(Scenario scenario) {
         List<String> tags = (List<String>) scenario.getSourceTagNames();
         List<String> exeptList = new ArrayList<>();
         exeptList.add("@login");
@@ -64,5 +64,19 @@ public class Hooks {
 
     }
 
+    @After()
+    public void tearDownScenarios(Scenario scenario) {
 
+        System.out.println("After Metotu");
+//        Eger bir Scenario FAIL ederse, ekran goruntusunu al ve rapora ekle
+
+        final byte[] failedScreenshot = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES);
+//                       ekran goruntusu    file tipi                  ekran goruntusunun adi
+        if (scenario.isFailed()) {
+            scenario.attach(failedScreenshot, "image/png", "failed_scenario_" + scenario.getName());
+            Driver.closeDriver();
+        }
+
+
+    }
 }
